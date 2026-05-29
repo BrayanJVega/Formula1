@@ -1,0 +1,1 @@
+{"version":3,"file":"PredictionForm.d.ts","sourceRoot":"","sources":["PredictionForm.tsx"],"names":[],"mappings":"AAKA,OAAO,KAAK,EAAsB,cAAc,EAAE,MAAM,8BAA8B,CAAC;AACvF,OAAO,KAAK,EAAE,IAAI,EAAE,MAAM,wBAAwB,CAAC;AAGnD,UAAU,mBAAmB;IAC3B,IAAI,EAAE,IAAI,CAAC;IACX,cAAc,EAAE,cAAc,CAAC;CAChC;AAED,wBAAgB,cAAc,CAAC,EAAE,IAAI,EAAE,cAAc,EAAE,EAAE,mBAAmB,2CAiR3E"}

@@ -1,0 +1,27 @@
+-- Seed data for F1 circuits
+INSERT INTO circuits (id, name, country, city, length_km, turns, drs_zones, lap_record, first_gp_year, is_street_circuit) VALUES
+  ('c001', 'Bahrain International Circuit', 'Bahrain', 'Sakhir', 5.412, 15, 3, '1:31.447 - Lewis Hamilton (2020)', 2004, false),
+  ('c002', 'Jeddah Corniche Circuit', 'Saudi Arabia', 'Jeddah', 6.174, 27, 3, '1:30.734 - Lewis Hamilton (2021)', 2021, true),
+  ('c003', 'Albert Park Circuit', 'Australia', 'Melbourne', 5.278, 14, 4, '1:20.260 - Charles Leclerc (2024)', 1996, true),
+  ('c004', 'Imola Circuit', 'Italy', 'Imola', 4.909, 19, 2, '1:15.484 - Lewis Hamilton (2020)', 1980, false),
+  ('c005', 'Miami International Autodrome', 'United States', 'Miami', 5.412, 19, 3, '1:29.708 - Max Verstappen (2024)', 2022, true),
+  ('c006', 'Circuit de Barcelona-Catalunya', 'Spain', 'Barcelona', 4.657, 14, 2, '1:18.149 - Max Verstappen (2024)', 1991, false),
+  ('c007', 'Circuit de Monaco', 'Monaco', 'Monte Carlo', 3.337, 19, 1, '1:12.909 - Lewis Hamilton (2021)', 1950, true),
+  ('c008', 'Circuit Gilles Villeneuve', 'Canada', 'Montreal', 4.361, 14, 3, '1:12.787 - Valtteri Bottas (2019)', 1978, false),
+  ('c009', 'Red Bull Ring', 'Austria', 'Spielberg', 4.318, 10, 3, '1:04.391 - Carlos Sainz (2024)', 1970, false),
+  ('c010', 'Silverstone Circuit', 'United Kingdom', 'Silverstone', 5.891, 18, 3, '1:27.097 - Lewis Hamilton (2019)', 1950, false),
+  ('c011', 'Hungaroring', 'Hungary', 'Budapest', 4.381, 14, 2, '1:16.627 - Lewis Hamilton (2020)', 1986, false),
+  ('c012', 'Circuit de Spa-Francorchamps', 'Belgium', 'Spa', 7.004, 19, 3, '1:46.286 - Valtteri Bottas (2018)', 1950, false),
+  ('c013', 'Circuit Zandvoort', 'Netherlands', 'Zandvoort', 4.259, 14, 2, '1:11.097 - Lewis Hamilton (2021)', 1952, false),
+  ('c014', 'Monza Circuit', 'Italy', 'Monza', 5.793, 11, 2, '1:21.046 - Lewis Hamilton (2020)', 1950, false),
+  ('c015', 'Baku City Circuit', 'Azerbaijan', 'Baku', 6.003, 20, 2, '1:45.218 - George Russell (2024)', 2016, true),
+  ('c016', 'Marina Bay Street Circuit', 'Singapore', 'Singapore', 4.940, 19, 3, '1:34.486 - Daniel Ricciardo (2018)', 2008, true),
+  ('c017', 'Circuit of the Americas', 'United States', 'Austin', 5.513, 20, 3, '1:36.169 - Charles Leclerc (2024)', 2012, false),
+  ('c018', 'Autodromo Hermanos Rodriguez', 'Mexico', 'Mexico City', 4.304, 17, 3, '1:17.887 - Valtteri Bottas (2021)', 1963, false),
+  ('c019', 'Interlagos Circuit', 'Brazil', 'Sao Paulo', 4.309, 15, 3, '1:10.540 - Valtteri Bottas (2018)', 1973, false),
+  ('c020', 'Las Vegas Strip Circuit', 'United States', 'Las Vegas', 6.201, 17, 3, '1:33.988 - Oscar Piastri (2024)', 2023, true),
+  ('c021', 'Lusail International Circuit', 'Qatar', 'Lusail', 5.419, 16, 3, '1:22.384 - Max Verstappen (2024)', 2021, false),
+  ('c022', 'Yas Marina Circuit', 'UAE', 'Abu Dhabi', 5.281, 16, 3, '1:26.103 - Max Verstappen (2021)', 2009, false),
+  ('c023', 'Suzuka International Racing Course', 'Japan', 'Suzuka', 5.807, 18, 2, '1:30.983 - Lewis Hamilton (2019)', 1987, false),
+  ('c024', 'Shanghai International Circuit', 'China', 'Shanghai', 5.451, 16, 3, '1:37.810 - Lewis Hamilton (2018)', 2004, false)
+ON CONFLICT (id) DO NOTHING;

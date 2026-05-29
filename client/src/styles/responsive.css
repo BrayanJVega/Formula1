@@ -1,0 +1,127 @@
+@layer utilities {
+  .container-mobile {
+    @apply w-full px-4 mx-auto max-w-7xl sm:px-6 lg:px-8;
+  }
+
+  .table-wrapper {
+    @apply w-full overflow-x-auto -mx-4 sm:mx-0;
+  }
+
+  .table-wrapper::-webkit-scrollbar {
+    @apply h-2;
+  }
+
+  .table-wrapper::-webkit-scrollbar-track {
+    @apply bg-f1-gray-dark;
+  }
+
+  .table-wrapper::-webkit-scrollbar-thumb {
+    @apply bg-f1-gray rounded-full;
+  }
+
+  .table-responsive {
+    @apply w-full min-w-[600px] lg:min-w-0;
+  }
+
+  .form-mobile {
+    @apply w-full max-w-md mx-auto sm:max-w-lg;
+  }
+
+  .form-mobile input,
+  .form-mobile select,
+  .form-mobile textarea {
+    @apply w-full;
+  }
+
+  .grid-responsive {
+    @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4;
+  }
+
+  .grid-responsive-2 {
+    @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4;
+  }
+
+  .grid-responsive-sidebar {
+    @apply grid grid-cols-1 lg:grid-cols-[280px_1fr] gap-6;
+  }
+
+  .flex-responsive {
+    @apply flex flex-col sm:flex-row;
+  }
+
+  .hide-mobile {
+    @apply hidden sm:block;
+  }
+
+  .show-mobile {
+    @apply block sm:hidden;
+  }
+
+  .text-responsive {
+    @apply text-sm sm:text-base lg:text-lg;
+  }
+
+  .heading-responsive {
+    @apply text-xl sm:text-2xl lg:text-3xl;
+  }
+
+  .stack-mobile {
+    @apply flex flex-col space-y-4 sm:flex-row sm:space-y-0 sm:space-x-4;
+  }
+
+  .nav-mobile {
+    @apply fixed inset-x-0 bottom-0 z-50 sm:relative sm:inset-auto;
+  }
+
+  .content-padding {
+    @apply pb-20 sm:pb-6;
+  }
+
+  .card-grid-mobile {
+    @apply grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3;
+  }
+
+  .sidebar-overlay {
+    @apply fixed inset-0 bg-black/50 z-40 lg:hidden;
+  }
+
+  .sidebar-drawer {
+    @apply fixed inset-y-0 left-0 z-50 w-72 transform transition-transform duration-300 ease-in-out lg:relative lg:translate-x-0;
+  }
+
+  .sidebar-drawer.closed {
+    @apply -translate-x-full lg:translate-x-0;
+  }
+
+  @media (max-width: 640px) {
+    .table-pagination {
+      @apply flex-col space-y-2;
+    }
+
+    .filter-bar {
+      @apply flex-col space-y-2;
+    }
+
+    .button-group {
+      @apply flex-col w-full space-y-2;
+    }
+
+    .button-group > * {
+      @apply w-full;
+    }
+
+    .stats-grid {
+      @apply grid-cols-2 gap-2;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .hide-tablet {
+      @apply hidden;
+    }
+
+    .modal-content {
+      @apply w-full max-w-full mx-2;
+    }
+  }
+}

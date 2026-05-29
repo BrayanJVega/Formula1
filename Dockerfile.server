@@ -1,0 +1,15 @@
+FROM node:20-alpine AS builder
+WORKDIR /app
+COPY package.json tsconfig.base.json ./
+COPY server/package.json server/tsconfig.json ./server/
+RUN npm install
+COPY server/ ./server/
+RUN npm run build --workspace=server
+
+FROM node:20-alpine
+WORKDIR /app
+COPY --from=builder /app/server/dist ./dist
+COPY --from=builder /app/server/package.json ./
+RUN npm install --production
+EXPOSE 3001
+CMD ["node", "dist/server.js"]

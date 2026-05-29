@@ -1,0 +1,30 @@
+export declare const ROUTES: {
+    readonly HOME: "/";
+    readonly LOGIN: "/login";
+    readonly REGISTER: "/register";
+    readonly FORGOT_PASSWORD: "/forgot-password";
+    readonly DASHBOARD: "/dashboard";
+    readonly DRIVERS: "/drivers";
+    readonly DRIVER_DETAIL: "/drivers/:id";
+    readonly TEAMS: "/teams";
+    readonly TEAM_DETAIL: "/teams/:id";
+    readonly CIRCUITS: "/circuits";
+    readonly CIRCUIT_DETAIL: "/circuits/:id";
+    readonly CALENDAR: "/calendar";
+    readonly RACE_DETAIL: "/races/:id";
+    readonly PREDICTIONS: "/predictions";
+    readonly PREDICTION_DETAIL: "/predictions/:id";
+    readonly SIMULATION: "/simulation/race";
+    readonly SEASON_SIMULATION: "/simulation/season";
+    readonly WHAT_IF: "/simulation/what-if";
+    readonly FANTASY: "/fantasy";
+    readonly FANTASY_TEAM: "/fantasy/team/:id";
+    readonly RANKINGS: "/rankings";
+    readonly LEAGUES: "/leagues";
+    readonly LEAGUE_DETAIL: "/leagues/:id";
+    readonly STATISTICS: "/statistics";
+    readonly PROFILE: "/profile";
+    readonly AI_PREDICTIONS: "/ai-predictions";
+    readonly ADMIN: "/admin";
+};
+//# sourceMappingURL=routes.d.ts.map

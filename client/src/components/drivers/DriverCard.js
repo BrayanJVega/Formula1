@@ -1,0 +1,9 @@
+import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
+import { useNavigate } from 'react-router-dom';
+import { Card } from '../ui/Card';
+import { nationalityFlag, getInitials } from '../../utils/formatters';
+export function DriverCard({ driver }) {
+    const navigate = useNavigate();
+    return (_jsxs(Card, { hover: true, className: "cursor-pointer group", onClick: () => navigate(`/drivers/${driver.id}`), children: [_jsx("div", { className: "flex items-start justify-between mb-4", children: _jsxs("div", { className: "flex items-center gap-3", children: [_jsx("div", { className: "w-16 h-16 rounded-full bg-f1-gray-dark flex items-center justify-center overflow-hidden", children: driver.photoUrl ? (_jsx("img", { src: driver.photoUrl, alt: driver.name, className: "w-full h-full object-cover" })) : (_jsx("span", { className: "text-xl font-bold text-f1-red", children: getInitials(driver.name) })) }), _jsxs("div", { children: [_jsxs("div", { className: "flex items-center gap-2", children: [_jsx("span", { className: "text-2xl", children: nationalityFlag(driver.nationality) }), _jsxs("span", { className: "text-2xl font-bold text-f1-red", children: ["#", driver.number] })] }), _jsx("h3", { className: "text-lg font-bold text-white group-hover:text-f1-red transition-colors", children: driver.name })] })] }) }), _jsxs("div", { className: "flex items-center gap-2 text-sm text-gray-400", children: [driver.team.logoUrl && (_jsx("img", { src: driver.team.logoUrl, alt: driver.team.name, className: "w-5 h-5 object-contain" })), _jsx("span", { children: driver.team.name })] })] }));
+}
+//# sourceMappingURL=DriverCard.js.map

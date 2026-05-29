@@ -1,0 +1,1 @@
+{"version":3,"file":"WinProbabilityChart.d.ts","sourceRoot":"","sources":["WinProbabilityChart.tsx"],"names":[],"mappings":"AAAA,OAAO,KAAK,EAAE,cAAc,EAAE,MAAM,sBAAsB,CAAC;AAE3D,UAAU,wBAAwB;IAChC,aAAa,EAAE,cAAc,EAAE,CAAC;IAChC,OAAO,CAAC,EAAE,MAAM,CAAC;CAClB;AAED,wBAAgB,mBAAmB,CAAC,EAAE,aAAa,EAAE,OAAY,EAAE,EAAE,wBAAwB,2CA2C5F"}
